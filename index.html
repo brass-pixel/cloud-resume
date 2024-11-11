@@ -2,12 +2,341 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <link rel="icon" type="image/svg+xml" href="images/logo.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Bo Cloud Resume</title>
+        <link rel="stylesheet" href="style.css" />
+
+        <!-- Link to Google Fonts to load Lato with both regular and italic styles -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@400;400i;300;500&display=swap"
+            rel="stylesheet"
+        />
     </head>
     <body>
-        <div id="root"></div>
-        <script type="module" src="/src/main.jsx"></script>
+        <nav class="navbar">
+            <img class="logo" src="images/logo.png" alt="Bo Logo" />
+            <div class="navbarMenu">
+                <a href="#">Home</a>
+                <button class="btn secondary">Connect with me</button>
+            </div>
+        </nav>
+
+        <div class="main">
+            <section id="hero">
+                <div id="intro">
+                    <h2>Hi, I'm Bo,</h2>
+                </div>
+                <h4>
+                    I’m a Bachelor of IT student passionate about building
+                    secure software solutions, with a focus on integrating
+                    cybersecurity best practices and leveraging cloud
+                    technologies.
+                </h4>
+            </section>
+            <section id="projects">
+                <h1>Projects and Experience</h1>
+                <div class="projectGallery">
+                    <div class="project">
+                        <div class="projectTitle">
+                            <h3>
+                                Secure Consent Form Upload and Mapping System
+                                (CSIRO)
+                            </h3>
+                            <h5>Jul 2024 - Oct 2024</h5>
+                        </div>
+                        <div class="projectCard">
+                            <img
+                                src="images/scfu.png"
+                                alt="Secure Consent Form Upload"
+                            />
+                            <div class="projectInfo">
+                                <p>
+                                    <strong>Goal:</strong> Develop a
+                                    cloud-based, serverless application to
+                                    securely digitize and manage research
+                                    participants' consent forms.
+                                </p>
+                                <p>
+                                    <strong>Technologies used: </strong>
+                                    React.js, Node.js, AWS, Terraform
+                                </p>
+                                <p>
+                                    <strong>Role: </strong>Cloud/Security
+                                    Engineer
+                                </p>
+                                <ul>
+                                    <li>
+                                        Designed and deployed serverless AWS
+                                        infrastructure with Terraform for
+                                        scalable, secure consent form management
+                                    </li>
+                                    <li>
+                                        Implemented IAM roles/policies based on
+                                        the ‘least-privilege’ principle for
+                                        secure access control
+                                    </li>
+                                    <li>
+                                        Configured AWS Cognito for secure user
+                                        authentication via API Gateway,
+                                        restricting access to authorized users
+                                    </li>
+                                    <li>
+                                        Collaborated closely with CSIRO project
+                                        sponsor to align development with key
+                                        project goals
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="projectTitle">
+                            <h3>
+                                Pepper Brand Ambassador: CelcomDigi Interactive
+                                Showcase
+                            </h3>
+                            <h5>Sep 2023 - Oct 2023</h5>
+                            <h5>ST Solutions Pty Ltd</h5>
+                        </div>
+                        <div class="projectCard">
+                            <img
+                                src="images/celcomdigi.png"
+                                alt="Pepper Brand Ambassador"
+                            />
+                            <div class="projectInfo">
+                                <p>
+                                    <strong>Goal:</strong> Design and develop
+                                    interactive application for Pepper Robot’s
+                                    tablet for an event
+                                </p>
+                                <p>
+                                    <strong>Technologies used: </strong>
+                                    Vue.JS, Choregraphe
+                                </p>
+                                <p>
+                                    <strong>Role: </strong>Web Developer/Junior
+                                    Software Developer
+                                </p>
+                                <ul>
+                                    <li>
+                                        Created touch-friendly UI and
+                                        interactive features to help event
+                                        attendees easily interact with Pepper
+                                        and learn about CelcomDigi
+                                    </li>
+                                    <li>
+                                        Deployed and tested the application on
+                                        the Pepper Robot using Choregraphe,
+                                        ensuring smooth integration and
+                                        interactive user functionality
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="projectTitle">
+                            <h3>NextGen Robotics Website</h3>
+                            <h5>Jul 2023 - Aug 2023</h5>
+                            <h5>ST Solutions Pty Ltd</h5>
+                        </div>
+                        <div class="projectCard">
+                            <img
+                                src="images/nextgen.png"
+                                alt="NextGen Robotics Website"
+                            />
+                            <div class="projectInfo">
+                                <p>
+                                    <strong>Goal:</strong> Redesign and
+                                    redevelop client website to strengthen brand
+                                    identity and improve user experience
+                                </p>
+                                <p>
+                                    <strong>Technologies used: </strong>
+                                    Figma, Webflow
+                                </p>
+                                <p>
+                                    <strong>Role: </strong>Web Developer/Junior
+                                    Software Developer
+                                </p>
+                                <ul>
+                                    <li>
+                                        Collaborated with NextGen Robotics
+                                        liaison to align design elements with
+                                        owner's requirements and vision
+                                    </li>
+                                    <li>
+                                        Conceptualised and built a user-friendly
+                                        website, incorporating ongoing feedback
+                                        to enhance the user experience
+                                    </li>
+                                    <li>
+                                        Implemented SEO-optimized keyword
+                                        strategies to improve search engine
+                                        visibility and boost user traffic
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="projectTitle">
+                            <h3>Teman Uni (University Project)</h3>
+                            <h5>Jul 2023 - Oct 2023</h5>
+                        </div>
+                        <div class="projectCard">
+                            <img src="images/temanuni.png" alt="Teman Uni" />
+                            <div class="projectInfo">
+                                <p>
+                                    <strong>Goal:</strong> Develop an app to
+                                    help international university students make
+                                    friends and connect with others in Australia
+                                </p>
+                                <p>
+                                    <strong>Technologies used: </strong>
+                                    MySQL, Python, Django, Figma, HTML/CSS,
+                                    Javascript
+                                </p>
+                                <p>
+                                    <strong>Role: </strong>Team
+                                    Leader/Full-stack Developer
+                                </p>
+                                <ul>
+                                    <li>
+                                        Designed a responsive, user-friendly web
+                                        application for seamless performance
+                                        across devices
+                                    </li>
+                                    <li>
+                                        Led a team to deliver features enabling
+                                        users to connect and build friendships,
+                                        ensuring timely completion
+                                    </li>
+                                    <li>
+                                        Applied cybersecurity best practices,
+                                        adopting a 'shift-left' approach to
+                                        identify and address risks early
+                                    </li>
+                                    <li>
+                                        Deployed a scalable SQL database schema
+                                        ensuring data integrity and compliance
+                                        with ACID principles
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="projectTitle">
+                            <h3>Pepper Robot x ChatGPT</h3>
+                            <h5>Feb 2023 - Apr 2023</h5>
+                        </div>
+                        <div class="projectCard">
+                            <img src="images/peppergpt.png" alt="Pepper GPT" />
+                            <div class="projectInfo">
+                                <p>
+                                    <strong>Goal:</strong> Combine ChatGPT with
+                                    Pepper Robot to develop an interactive
+                                    physical chatbot
+                                </p>
+                                <p>
+                                    <strong>Technologies used: </strong>
+                                    Python 2 & 3, Speech Recognition, Google
+                                    Cloud Functions
+                                </p>
+                                <p>
+                                    <strong>Role: </strong>Software Developer
+                                    Intern
+                                </p>
+                                <ul>
+                                    <li>
+                                        Resolved Python compatibility issues
+                                        between Pepper Robot and ChatGPT API
+                                        using Google Cloud Functions
+                                    </li>
+                                    <li>
+                                        Tested and explored Pepper Robot’s
+                                        capabilities to accurately respond to
+                                        various questions
+                                    </li>
+                                    <li>
+                                        Pitched and demonstrated prototype at
+                                        RMIT AI Industry Day 2023
+                                    </li>
+                                    <li>
+                                        Generated interest from universities in
+                                        the commercial and community potential
+                                        of similar initiatives.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="education">
+                <h1>Education</h1>
+                <div class="educationGallery">
+                    <div class="educationCard">
+                        <img
+                            class="badge"
+                            src="images/awsbadge.png"
+                            alt="AWS Cloud Practictioner Badge"
+                        />
+                        <h4>AWS Certified Cloud Practitioner</h4>
+                        <h5>Jul 2024</h5>
+                    </div>
+                </div>
+            </section>
+            <section id="skills">
+                <h1>Skills</h1>
+                <div class="skillsGallery">
+                    <div class="skillsCard">
+                        <img src="images/aws.svg" alt="AWS Logo" />
+                        <h5>AWS</h5>
+                    </div>
+
+                    <div class="skillsCard">
+                        <img src="images/terraform.svg" alt="Terraform Logo" />
+                        <h5>Terraform</h5>
+                    </div>
+
+                    <div class="skillsCard">
+                        <img src="images/react.svg" alt="React Logo" />
+                        <h5>React</h5>
+                    </div>
+
+                    <div class="skillsCard">
+                        <img src="images/nodejs.svg" alt="Node.js Logo" />
+                        <h5>Node.js</h5>
+                    </div>
+
+                    <div class="skillsCard">
+                        <img src="images/python.svg" alt="Python Logo" />
+                        <h5>Python</h5>
+                    </div>
+
+                    <div class="skillsCard">
+                        <img src="images/java.svg" alt="Java Logo" />
+                        <h5>Java</h5>
+                    </div>
+
+                    <div class="skillsCard">
+                        <img src="images/php.svg" alt="PHP Logo" />
+                        <h5>PHP</h5>
+                    </div>
+
+                    <div class="skillsCard">
+                        <img src="images/github.svg" alt="GitHub Logo" />
+                        <h5>GitHub</h5>
+                    </div>
+                </div>
+            </section>
+            <section id="contact"></section>
+        </div>
     </body>
 </html>
