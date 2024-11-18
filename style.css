@@ -1,7 +1,7 @@
 :root {
     font-family: "Lato", sans-serif;
     line-height: 1.5;
-    font-weight: 400;
+    font-weight: 500;
 
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
@@ -31,18 +31,18 @@ ul {
 
 h1 {
     font-size: 48px;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--primaryColour);
 }
 
 h2 {
     font-size: 36px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 h3 {
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 h4 {
@@ -60,7 +60,7 @@ h5 {
 p,
 a {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
     text-decoration: none;
 }
 a {
@@ -130,12 +130,15 @@ a:active {
     align-items: center;
     padding: 20px;
     gap: 150px;
+    padding-bottom: 150px;
 }
 
 section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 40px;
+    padding: 20px;
 }
 
 #hero {
@@ -146,9 +149,20 @@ section {
     height: 80vh;
 }
 
-section {
-    gap: 40px;
-    padding: 20px;
+#intro {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    border-radius: 10px 0px 0px 10px;
+    background: var(
+        --Blue-Purple-Gradient,
+        linear-gradient(
+            90deg,
+            rgba(48, 125, 191, 0.4) -0.16%,
+            rgba(189, 0, 255, 0.4) 48.8%,
+            rgba(0, 0, 0, 0.25) 99.84%
+        )
+    );
 }
 
 .project {
@@ -182,17 +196,16 @@ section {
     grid-template-columns: 1fr 2fr;
 }
 .educationCard {
-    background-color: white;
     display: flex;
     flex-direction: column;
     gap: 2px;
-    width: 280px;
-    height: 330px;
+    /* width: 280px;
+    height: 330px; */
     color: black;
     align-items: center;
     justify-content: center;
     text-align: center;
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
 
 .badge {
@@ -210,7 +223,7 @@ section {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    padding: 40px;
+    padding: 30px;
     background-color: white;
     border-radius: 5px;
     color: black;
