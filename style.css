@@ -5,7 +5,7 @@
 
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
-    background-color: black;
+    background-color: #091219;
     color: white;
 
     font-synthesis: none;
@@ -15,6 +15,8 @@
 
     --primaryColour: #f67844;
     --secondaryColour: #1d4c74;
+
+    font-size: 18px;
 }
 * {
     margin: 0;
@@ -41,25 +43,25 @@ h2 {
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 600;
 }
 
 h4 {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 500;
 }
 
 h5 {
     font-family: "Lato", sans-serif; /* Ensure Lato is applied */
     font-style: italic; /* Apply italic */
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
 }
 
 p,
 a {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     text-decoration: none;
 }
@@ -93,7 +95,7 @@ a:active {
 /* Button */
 .btn {
     padding: 15px 30px;
-    font-size: 16px;
+    font-size: 18px;
     border: none;
     border-radius: 10px;
 }
@@ -164,13 +166,61 @@ section {
         )
     );
 }
-
+.projectGallery {
+    max-width: 800px;
+    /* display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, minmax(200px, 650px)); */
+}
 .project {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 10px;
-    margin-bottom: 100px;
+    align-items: center;
+    gap: 50px;
+    padding: 40px;
+    margin-bottom: 70px;
+    /* background-color: #f5f8f8; */
+    /* background-color: #1e2020; */
+    background-color: #2b2e31;
+    /* color: black; */
+    border-radius: 5px;
+    position: relative; /* Make sure positioning context is available for the pseudo-element */
+    /* Remove default border */
+    border: 5px solid transparent;
+    background-clip: padding-box; /* Prevent the background from covering the border */
+    /* box-shadow:
+        0 3px 9px black,
+        inset 0 0 9px white; /* Optional shadow */ */
+    /* border-style: solid;
+    border-width: 3px;
+
+    border-image: linear-gradient(
+            45deg,
+            #f67844 0%,
+            rgba(189, 0, 255, 0.4) 48.8%,
+            rgba(48, 125, 191, 0.4) 99.84%
+        )
+        1; */
+}
+.project::after {
+    content: "";
+    position: absolute;
+    top: -3px; /* Offset by the border width */
+    bottom: -3px; /* Offset by the border width */
+    left: -3px; /* Offset by the border width */
+    right: -3px; /* Offset by the border width */
+    background: linear-gradient(
+        120deg,
+        #f67844 0%,
+        rgba(189, 0, 255, 0.4) 48.8%,
+        rgba(48, 125, 191, 0.4) 99.84%
+    );
+    border-radius: 5px; /* Apply the same border-radius to the pseudo-element */
+    z-index: -1; /* Ensure the pseudo-element stays behind the content */
+}
+.project img {
+    width: 100%;
+    height: auto;
 }
 
 .projectTitle {
@@ -178,12 +228,12 @@ section {
 }
 
 .projectTitle h3 {
-    color: #ffc4ac;
+    color: var(--primaryColour);
 }
 .projectCard {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    /* align-items: center; */
     gap: 20px;
 }
 
@@ -237,6 +287,54 @@ section {
     font-style: normal;
 }
 
+#contact {
+    display: flex;
+    max-width: 700px;
+    width: 700px;
+    padding: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    border-radius: 5px;
+    background-color: #fdfcfc;
+}
+
+.contactForm {
+    width: 80%;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: black;
+}
+
+.contactForm h2 {
+    color: var(--secondaryColour);
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.inputContainer input,
+.inputContainer textarea {
+    display: flex;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-bottom: 1px solid var(--secondaryColour);
+    background: #f2f2f2;
+    color: black;
+}
 footer {
     background-color: #f2f2f2;
     display: flex;
