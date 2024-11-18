@@ -530,38 +530,23 @@
             <section id="contact">
                 <form class="contactForm">
                     <h2>Contact Me</h2>
-                    <div class="contactFormInputs">
-                        <div class="inputContainer">
-                            <div class="inputColumn">
-                                <span class="error">Enter your name</span>
-                                <input
-                                    required
-                                    type="text"
-                                    placeholder="Name*"
-                                />
-                            </div>
-                            <div class="inputColumn">
-                                <span class="error">Enter your email</span>
-                                <input
-                                    required
-                                    type="email"
-                                    placeholder="Email*"
-                                />
-                            </div>
-                        </div>
+                    <div class="inputContainer">
+                        <span class="error">Enter your name</span>
+                        <input required type="text" placeholder="Name*" />
+                    </div>
+                    <div class="inputContainer">
+                        <span class="error">Enter your email</span>
+                        <input required type="email" placeholder="Email*" />
+                    </div>
 
-                        <div class="inputContainer">
-                            <span class="error">Enter your message</span>
-                            <textarea
-                                placeholder="Message*"
-                                required
-                            ></textarea>
-                        </div>
+                    <div class="inputContainer">
+                        <span class="error">Enter your message</span>
+                        <textarea placeholder="Message*" required></textarea>
                     </div>
                     <button type="submit" class="btn secondary">
                         Send me a message
                     </button>
-                    <div>
+                    <div id="contactLinkedin">
                         <p>Or connect with me on LinkedIn</p>
                         <a href="">
                             <img
