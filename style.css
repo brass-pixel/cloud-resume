@@ -86,7 +86,7 @@ a:active {
     display: flex;
     justify-content: space-between;
     background-color: white;
-    padding: 0 100px;
+    padding: 0 20px;
 }
 .navbarMenu {
     gap: 32px;
@@ -276,7 +276,7 @@ section {
 
 #contact {
     width: 100%;
-    max-width: 700px;
+    max-width: 600px;
     /* height: 500px; */
     display: flex;
     flex-direction: row;
@@ -380,4 +380,13 @@ footer {
 .socialMediaIcon {
     width: 30px;
     height: auto;
+}
+
+@media (max-width: 768px) {
+    body {
+    }
+
+    #hero {
+        align-items: center;
+    }
 }
